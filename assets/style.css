@@ -1,59 +1,36 @@
-/* ---------- Fonts (self-hosted, latin subset) ---------- */
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400 600;
-  font-display: swap;
-  src: url("fonts/inter-latin.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Source Serif 4";
-  font-style: normal;
-  font-weight: 400 600;
-  font-display: swap;
-  src: url("fonts/source-serif-4-latin.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Source Serif 4";
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/source-serif-4-italic-latin.woff2") format("woff2");
-}
-
 /* ---------- Color tokens ---------- */
 :root {
-  --bg: #faf7f2;
-  --surface: #f2ede4;
-  --ink: #1f1d1a;
-  --muted: #6b655c;
-  --rule: #e2dbcf;
+  --bg: #fcfbf9;
+  --surface: #f4f3f0;
+  --ink: #1c1b19;
+  --muted: #68665f;
+  --rule: #e4e2dd;
   --accent: #2f5d50;
-  --accent-soft: #e3ece8;
-  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --accent-soft: #e4ece8;
+  --serif: Georgia, "Times New Roman", Times, serif;
+  --sans: system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #1a1916;
-    --surface: #23211d;
-    --ink: #ece7de;
-    --muted: #a39c90;
-    --rule: #34312b;
+    --bg: #121212;
+    --surface: #1c1c1c;
+    --ink: #e8e8e8;
+    --muted: #a0a0a0;
+    --rule: #2e2e2e;
     --accent: #8cc2ae;
-    --accent-soft: #263430;
+    --accent-soft: #223029;
   }
 }
 
 :root[data-theme="dark"] {
-  --bg: #1a1916;
-  --surface: #23211d;
-  --ink: #ece7de;
-  --muted: #a39c90;
-  --rule: #34312b;
+  --bg: #121212;
+  --surface: #1c1c1c;
+  --ink: #e8e8e8;
+  --muted: #a0a0a0;
+  --rule: #2e2e2e;
   --accent: #8cc2ae;
-  --accent-soft: #263430;
+  --accent-soft: #223029;
 }
 
 /* ---------- Base ---------- */
@@ -66,7 +43,7 @@ body {
   background: var(--bg);
   color: var(--ink);
   font-family: var(--serif);
-  font-size: 1.125rem;
+  font-size: 1.0625rem;
   line-height: 1.65;
 }
 

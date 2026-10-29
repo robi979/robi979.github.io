@@ -1,6 +1,6 @@
 # Robin Nowak — academic website
 
-Plain HTML/CSS. There's no build step and no external requests: fonts are self-hosted in `assets/fonts/`.
+Plain HTML/CSS. There's no build step and no external requests; the site uses the visitor's system font.
 
 ## Editing content
 - **About page:** `index.html`.
